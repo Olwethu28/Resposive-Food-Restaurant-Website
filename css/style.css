@@ -67,7 +67,8 @@ section {
 
 .btn {
     margin-top: 1rem;
-    display: inline-block;
+    display:flex;
+    align-self: flex-end;
     background: var(--peru);
     color: var(--white);
     font-size: 2rem;
