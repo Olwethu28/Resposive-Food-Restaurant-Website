@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+       
+
+       input[type="text"],
+input[type="password"],
+input[type="password"],
+select {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    align-items: center;
+    border-radius: 10px;
+}
+body{
+    background: url('./image/background2.jpg');
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: orange;
+    font-size: large;
+    font-weight: bold;
+}
+h1{
+    color: gold;
+    align-self: center;
+    align-content: center;
+}
+h2{
+    color: gold;
+}
+p{
+    color: lightyellow;
+    font-size: large;
+    font-weight: bolder;
+}
+a{
+    color: orangered;
+    font-weight: bolder;
+    font-size: large;
+}
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid lightgoldenrodyellow;
+    background-color: orange;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Login</h1>
+    </header>
+
+    <section id="login-form">
+        <form action="/admin/login" method="POST">
+            <label for="staffnumber">Staff Number:</label>
+            <input type="text" id="staffnumber" name="staffnumber" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign In</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Don't have an account? <a href="./adminsignup.html">Sign up here</a></p>
+    </footer>
+</body>
+</html>

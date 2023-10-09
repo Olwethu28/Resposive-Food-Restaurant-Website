@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+         input[type="text"],
+input[type="password"],
+input[type="password"],
+select {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    align-items: center;
+    border-radius: 10px;
+}
+body{
+    background: url('./image/background2.jpg');
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: orange;
+}
+h1{
+    color: gold;
+    align-self: center;
+    align-content: center;
+}
+h2{
+    color: gold;
+}
+p{
+    color: lightyellow;
+}
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid lightgoldenrodyellow;
+    background-color: orange;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+th{
+    justify-content: space-evenly;
+    color: bisque;
+}
+td{
+    justify-content: space-evenly;
+    color: bisque;
+    align-content: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+    </header>
+
+    <section id="view-orders">
+        <h2>View Orders</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Items</th>
+                    <th>Total Amount</th>
+                    <th>date&time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Display orders from the database -->
+                <tr> 
+                    <td style="color: #ccc;">1</td>
+                    <td style="color: #ccc;">John Doe</td>
+                    <td style="color: #ccc;">PIZZA,<br> FRUIT SMOOTHY 300ml</td>
+                    <td style="color: #ccc;">R90</td>
+                    <td style="color: #ccc;">2023/10/23</td>
+                </tr>
+                <!-- Add more rows for other orders -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="view-orders">
+        <h2>View Table booking</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Table number</th>
+                    <th>Customer Name</th>
+                    <th>Number of people</th>
+                    <th>Customer telephone </th>
+                    <th>date&time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Display orders from the database -->
+                <tr> 
+                    <td style="color: #ccc;">1</td>
+                    <td style="color: #ccc;"></td>
+                    <td style="color: #ccc;"></td>
+                    <td style="color: #ccc;"></td>
+                    <td style="color: #ccc;"></td>
+                </tr>
+                <!-- Add more rows for other orders -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="update-menu">
+        <h2>Update Menu</h2>
+        <form action="/update-menu" method="POST">
+            <label for="dish-name">Dish Name:</label>
+            <input type="text" id="dish-name" name="dishName" required>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required>
+            <button type="submit">Add Dish</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Logged in as Admin</p>
+    </footer>
+</body>
+</html>

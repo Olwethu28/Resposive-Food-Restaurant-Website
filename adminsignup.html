@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Signup</title>
+    <style>
+       input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+body{
+    background: url('./image/background2.jpg');
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: orange;
+    font-weight: bolder;
+    font-size: large;
+}
+h1{
+    color: gold;
+    align-self: center;
+    align-content: center;
+}
+h2{
+    color: gold;
+}
+p{
+    color: lightyellow;
+    font-weight: bolder;
+    font-size: large;
+}
+a{
+    color: orangered;
+    font-size: large;
+    font-weight: bolder;
+}
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid lightgoldenrodyellow;
+    background-color: orange;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Signup</h1>
+    </header>
+
+    <section id="signup-form">
+        <h2>Create an Admin Account</h2>
+        <form action="./adminsignup.html" method="POST">
+            <label for="staffnumber">Staff Number:</label>
+            <input type="text" id="username"  required>
+
+            <label for="name">Staff Name:</label>
+            <input type="text" id="name"  required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email"  required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password"  required>
+            <button id="signup" type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Already have an account? <a href="./adminsignin.html">Log in here</a></p>
+    </footer>
+
+    </body>
+</html>
